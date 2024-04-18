@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emploitic</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    {#/*== NAVIGATION START ==*/#}
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Offres d'emploi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item"><a class="dropdown-item" href="/offres-d-emploi">Recherche
+                                    avancée</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item" href="/offres-d-emploi/fonction">Offres
+                                    d'emploi par fonction</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item" href="/offres-d-emploi/secteur">Offres
+                                    d'emploi par secteur</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item" href="/offres-d-emploi/region">Offres
+                                    d'emploi par région</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item" href="/emploi-cadres">Offres d'emploi
+                                    pour cadres</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item"
+                                    href="/offres-d-emploi/recherche-par-mot-cles">Recherche par motclés</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Découvrez les entreprises</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blog" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blog">
+                            <li><a class="dropdown-item"
+                                    href="https://blog.emploitic.com/index.php/category/gerer-sa-carriere/">Carrière</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://blog.emploitic.com/index.php/category/management-rh/">Management
+                                    RH</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://blog.emploitic.com/index.php/category/actualite-news/">Actualité </a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://blog.emploitic.com/index.php/category/nos-solutions/">Nos
+                                    solutions</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://blog.emploitic.com/index.php/category/evenements/">Nos
+                                    events</a></li>
+                            <li><a class="dropdown-item" href="/blog-emploi/modeles-de-cv">Modèles de CV</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-primary" style="margin-right: 20px;">Se connecter</a>
+                    <a class="btn btn-trans" href="#">Espace recruteur</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {#/*== NAVIGATION END ==*/#}
+
+    {#/*== BANNER SECTION START ==*/#}
+    <section class="banner_section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-4">
+                    <div class="py-lg-4">
+                        <h1 class="banner__title--header">Trouvez votre futur emploi en Algérie</h1>
+                        <h2 class="banner__title--text">
+                            Parmi plus de
+                            <span class="">
+                                <strong>
+                                    <a href=" /offres-d-emploi"><mark>5263</mark></a>
+                                </strong>
+                            </span>
+                            postes ouverts
+                        </h2>
+                    </div>
+
+                    <form class="header-job-search">
+                        <div class="input-keyword shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                            <input type="text" placeholder="Poste, compétence, entreprise ..." autocomplete="off">
+                        </div>
+                        <div class="input-location shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            <input type="text" class="" placeholder="Région, wilaya ...">
+                        </div>
+                        <div class="btn-search">
+                            <button class="btn btn-primary " style="height: 100%;" type="submit">Recherche </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="p-5 d-none d-sm-none d-md-block h6 user-login">
+            Vous êtes un <strong>recruteur</strong> ?<a href="#">Publiez vos annonces</a></div>
+    </section>
+    {#/*== BANNER SECTION END ==*/#}
+
+    {#/*== SEARCH BY JOB SECTION START ==*/#}
+    <section class="search__section--jobs" style="background-color: #f4f4f4">
+        <div class="container py-4">
+            <header class="section-header">
+                <h2>Dernières offres</h2>
+            </header>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+
+
+                    <a class="item-block" href="#">
+                        <header>
+                            <div class="header-main">
+                                <img src="https://www.emploitic.com/attachments/company_logo/logo_5575588_large.jpg"
+                                    alt="">
+                                <div class="hgroup text-truncate">
+                                    <h4 class="text-truncate">Ingénieur chimiste</h4>
+                                    <h5 class="text-truncate">SARL Al Fayha Produits Engineering</h5>
+                                    <div class="header-meta">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                        <span class="location">
+                                            <span class="spaced-right">
+                                                <i class="fa fa-map-marker icon-left"></i>
+                                                Alger, Centre, Algérie
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </header>
+                        <div class="footer">
+                            <span class="tag tag__bg--primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                CDD
+                            </span>
+                            <span class="tag tag__bg--secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                Confirmé /Expérimenté
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a class="item-block" href="#">
+                        <header>
+                            <div class="header-main">
+                                <img src="	https://www.emploitic.com/attachments/company_logo/logo_5575468_large.jpg"
+                                    alt="">
+                                <div class="hgroup text-truncate">
+                                    <h4 class="text-truncate">Ingénieur Process</h4>
+                                    <h5 class="text-truncate">Entreprise anonyme</h5>
+                                    <div class="header-meta">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                        <span class="location"><span class="spaced-right">
+                                                <iclass="fa fa-map-marker icon-left"></i>Alger, Centre, Algérie
+                                            </span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </header>
+                        <div class="footer">
+
+                            <span class="tag tag__bg--secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                Confirmé /Expérimenté
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a class="item-block" href="#">
+                        <header>
+                            <div class="header-main">
+                                <img src="https://www.emploitic.com/attachments/company_logo/logo_5575588_large.jpg"
+                                    alt="">
+                                <div class="hgroup text-truncate">
+                                    <h4 class="text-truncate">Administration des Ventes</h4>
+                                    <h5 class="text-truncate">Ad Display spa</h5>
+                                    <div class="header-meta">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                        <span class="location"><span class="spaced-right">
+                                                <iclass="fa fa-map-marker icon-left"></i>Alger, Centre, Algérie
+                                            </span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </header>
+                        <div class="footer">
+                            <span class="tag tag__bg--primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                CDD
+                            </span>
+                            <span class="tag tag__bg--secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                Confirmé /Expérimenté
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a class="item-block" href="#">
+                        <header>
+                            <div class="header-main">
+                                <img src="https://www.emploitic.com/attachments/company_logo/logo_0_large.jpg" alt="">
+                                <div class="hgroup text-truncate">
+                                    <h4 class="text-truncate">Délégué Commerciale</h4>
+                                    <div class="header-meta">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                        <span class="location"><span class="spaced-right">
+                                                <iclass="fa fa-map-marker icon-left"></i>Alger, Centre, Algérie
+                                            </span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </header>
+                        <div class="footer">
+                            <span class="tag tag__bg--primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                CDI
+                            </span>
+                            <span class="tag tag__bg--secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=".75rem" height=".75rem"
+                                    fill="currentColor" style="margin-right: 8px;" class="bi bi-bookmark-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                                </svg>
+                                Confirmé /Expérimenté
+                            </span>
+                        </div>
+                    </a>
+
+                    <p class="search__section--button text-center">
+                        <a class="btn btn-primary" style="padding: 12px 24px;"> Consulter toutes les offres </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    {#/*== SEARCH BY JOB SECTION END ==*/#}
+
+    {#/*== SEARCH BY JOB CITIES START ==*/#}
+    <section class="search_section--cities" style="background-color: #fafafa;">
+        <div class="container">
+            <header class="section-header">
+                <h2>Offres d'emploi par région</h2>
+            </header>
+            <div class="widget widget_tag_cloud">
+                <div class="widget-body text-center">
+                    <a href="/offres-d-emploi/region/11395-centre">Centre (2142)</a>
+                    <a href="/offres-d-emploi/region/6-alger">Alger (1878)</a>
+                    <a href="/offres-d-emploi/region/11396-est">Est (304)</a>
+                    <a href="/offres-d-emploi/region/11397-ouest">Ouest (287)</a>
+                    <a href="/offres-d-emploi/region/34-oran">Oran (195)</a>
+                    <a href="/offres-d-emploi/region/12-blida">Blida (120)</a>
+                    <a href="/offres-d-emploi/region/39-setif">Setif (69)</a>
+                    <a href="/offres-d-emploi/region/15-boumerdes">Boumerdes (62)</a>
+                    <a href="/offres-d-emploi/region/17-constantine">Constantine (61)</a>
+                    <a href="/offres-d-emploi/region/13-bordj-bou-arreridj">Bordj Bou Arreridj (53)</a>
+                    <a href="/offres-d-emploi/region/10-bejaia">Bejaia (47)</a>
+                    <a href="/offres-d-emploi/region/49-tizi-ouzou">Tizi Ouzou (41)</a>
+                    <a href="/offres-d-emploi/region/14-bouira">Bouira (40)</a>
+                    <a href="/offres-d-emploi/region/11398-sud-est">Sud est (36)</a>
+                    <a href="/offres-d-emploi/region/7-annaba">Annaba (35)</a>
+                    <a href="/offres-d-emploi/region/35-ouargla">Ouargla (27)</a>
+                    <a href="/offres-d-emploi/region/50-tlemcen">Tlemcen (26)</a>
+                    <a href="/offres-d-emploi/region/47-tipaza">Tipaza (24)</a>
+                    <a href="/offres-d-emploi/region/8-batna">Batna (24)</a>
+                    <a href="/offres-d-emploi/region/16-chlef">Chlef (16)</a>
+                    <a href="/offres-d-emploi/region/31-mostaganem">Mostaganem (14)</a>
+                    <a href="/offres-d-emploi/region/40-sidi-bel-abbes">Sidi Bel Abbes (13)</a>
+                    <a href="/offres-d-emploi/region/28-mascara">Mascara (11)</a>
+                    <a href="/offres-d-emploi/region/41-skikda">Skikda (10)</a>
+                    <a href="/offres-d-emploi/region/11-biskra">Biskra (10)</a>
+                    <a href="/offres-d-emploi/region/5-ain-temouchent">Ain Temouchent (10)</a>
+                    <a href="/offres-d-emploi/region/32-msila">Msila (7)</a>
+                    <a href="/offres-d-emploi/region/21-el-tarf">El tarf (7)</a>
+                    <a href="/offres-d-emploi/region/22-ghardaia">Ghardaia (6)</a>
+                    <a href="/offres-d-emploi/region/45-tiaret">Tiaret (6)</a>
+
+                </div>
+                <p class="text-center">
+                    <a class="btn btn-primary" style="padding: 12px 24px;" href="#">Plus de régions</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    {#/*== SEARCH BY JOB CITIES START ==*/#}
+
+    {#/*== SEARCH BY JOB FONTION START ==*/#}
+    <section class="search_section--fonction" style="background-color: #fff;">
+        <div class="container">
+            <header class="section-header">
+                <h2>Offres d'emploi par fonction</h2>
+            </header>
+            <div class="widget widget_tag_cloud">
+                <div class="widget-body text-center">
+                    <a href="/offres-d-emploi/fonction/358-commercial-technico-commercial-service-client">Commercial,
+                        Technico Commercial, Service Client (391)</a>
+                    <a href="/offres-d-emploi/fonction/372-production-méthode-industrie">Production, méthode, industrie
+                        (209)</a>
+                    <a href="/offres-d-emploi/fonction/350-comptabilité-finance">Comptabilité, Finance (195)</a>
+                    <a href="/offres-d-emploi/fonction/365-informatique-systèmes-d-information-internet">Informatique,
+                        Systèmes d'information, Internet (194)</a>
+                    <a href="/offres-d-emploi/fonction/351-métiers-banque-et-assurances">Métiers Banque et assurances
+                        (155)</a>
+                    <a href="/offres-d-emploi/fonction/369-ingénierie-etudes-projet-r-d">Ingénierie, Etudes, Projet,
+                        R&amp;D (146)</a>
+                    <a href="/offres-d-emploi/fonction/362-marketing-communication">Marketing, Communication (141)</a>
+                    <a href="/offres-d-emploi/fonction/370-logistique-achat-stock-transport">Logistique, Achat, Stock,
+                        Transport (134)</a>
+                    <a href="/offres-d-emploi/fonction/373-maintenance-entretien">Maintenance, Entretien (130)</a>
+                    <a href="/offres-d-emploi/fonction/376-santé-médical-pharmacie">Santé, Médical, Pharmacie (129)</a>
+                    <a href="/offres-d-emploi/fonction/374-qualité-sécurité-environnement">Qualité, Sécurité,
+                        Environnement (122)</a>
+                    <a href="/offres-d-emploi/fonction/348-administration-moyens-généraux">Administration, Moyens
+                        généraux (118)</a>
+                    <a href="/offres-d-emploi/fonction/353-rh-personnel-formation">RH, personnel, formation (105)</a>
+                    <a href="/offres-d-emploi/fonction/357-vente-télévente-assistanat">Vente, Télévente, Assistanat
+                        (87)</a>
+                    <a href="/offres-d-emploi/fonction/380-autre">Autre (81)</a>
+                    <a href="/offres-d-emploi/fonction/349-assistanat-secrétariat">Assistanat, secrétariat (78)</a>
+                    <a href="/offres-d-emploi/fonction/368-chantier-métiers-btp-architecture">Chantier, Métiers BTP,
+                        Architecture (74)</a>
+                    <a href="/offres-d-emploi/fonction/360-responsable-commercial-grands-comptes">Responsable
+                        Commercial, Grands comptes (68)</a>
+                    <a href="/offres-d-emploi/fonction/378-hôtellerie-tourisme-restauration-loisirs">Hôtellerie,
+                        Tourisme, Restauration, Loisirs (64)</a>
+                    <a href="/offres-d-emploi/fonction/352-juridique-fiscal-audit-conseil">Juridique, Fiscal, Audit,
+                        Conseil (61)</a>
+
+                </div>
+                <p class="text-center">
+                    <a class="btn btn-primary" style="padding: 12px 24px;" href="#">Consulter tous les métiers</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    {#/*== SEARCH BY JOB FONTION START ==*/#}
+
+    {#/*== FOOTER START ==*/#}
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 text-center-phone">
+
+
+                    <div class="custom">
+                        <h1 class="logo" style="width: 180px;">Brand </h1>
+                        <p style="color:white;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dicta?
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="col-6 col-md-3 footer-hidden-phone">
+                    <div>
+                        <h6>ESPACE CANDIDAT</h6>
+
+                        <ul class="footer-links menu">
+                            <li class="item-226"><a href="/offres-d-emploi">Recherche avancée</a></li>
+                            <li class="item-227"><a href="/offres-d-emploi/fonction">Emploi par fonction</a></li>
+                            <li class="item-228"><a href="/offres-d-emploi/region">Emploi par région</a></li>
+                            <li class="item-229"><a href="/offres-d-emploi/secteur">Emploi par secteur d'activité</a>
+                            </li>
+                            <li class="item-772"><a href="https://www.emploitic.com/candidat-contact/">Contact
+                                    candidat</a></li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+                <div class="col-6 col-md-3 footer-hidden-phone">
+                    <div>
+
+                        <h6>Espace recruteur </h6>
+
+                        <ul class="footer-links menu">
+                            <li class="item-238"><a href="/entreprises">Publiez vos annonces</a></li>
+                            <li class="item-530"><a href="https://group.emploitic.com/?page_id=8750">Boostez votremarque
+                                    employeur</a></li>
+                            <li class="item-240"><a href="https://group.emploitic.com/">Emploitic groupe</a></li>
+                            <li class="item-239"><a href="https://entreprises.emploitic.com/#contact">Contact
+                                    Entreprise</a></li>
+                            <li class="item-775"><a href="https://bit.ly/3mEQCX0">Logiciel RH &amp; Paie</a></li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+                <div class="col-6 col-md-3 footer-hidden-phone">
+                    <div class="hidden-phone">
+                        <h6>A propos </h6>
+
+                        <ul class="footer-links menu">
+                            <li class="item-242">
+                                <a href="https: //www.emploitic.com/entreprise/emploitic-spa/presentation">Qui
+                                    sommes-nous?</a>
+                            </li>
+                            <li class="item-243"><a href="/?Itemid=306">Comment ça marche?</a></li>
+                            <li class="item-335"><a href="/partenaire">Partenaires</a></li>
+                            <li class="item-719"><a href="/termes-et-conditions">Termes et conditions</a></li>
+                            <li class="item-776"><a href="/politique-de-confidentialite">Politique de
+                                    confidentialité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hidden-phone">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <div class="custom">
+                        <p style="color: white;">Copyright.</span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-end">
+                    <div class="custom">
+                        <ul class="social-icons">
+                            <li>
+                                <a class="facebook" href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD100"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook" href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD100"
+                                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a class="linkedin" href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFD100"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {#/*== FOOTER END ==*/#}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
